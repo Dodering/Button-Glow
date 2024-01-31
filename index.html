@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Fond noir */
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #ff6b6b; /* Couleur principale */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3); /* Ombre par défaut */
+        }
+
+        .custom-button:hover {
+            background-color: #ff4d4d; /* Couleur au survol */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.5); /* Ombre au survol */
+        }
+
+        .reflection {
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 20px;
+            background: linear-gradient(to bottom, rgba(255, 107, 107, 0.1), rgba(255, 255, 255, 0));
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="custom-button" ontouchstart="">Cliquez-moi</div>
+        <div class="reflection"></div>
+    </div>
+
+    <script>
+        // Ajoutez des scripts JavaScript supplémentaires ici si nécessaire
+    </script>
+</body>
+</html>
